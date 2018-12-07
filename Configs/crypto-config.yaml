@@ -13,7 +13,7 @@ PeerOrgs:
   - Hostname: org1-peer-0
     CommonName: "{{.Hostname}}"
 - Name: Org2
-  Domain: rg2-org
+  Domain: org2
   Specs:
   - Hostname: org2-peer-0
     CommonName: "{{.Hostname}}"
