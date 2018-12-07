@@ -4,18 +4,18 @@ Organizations:
 - &OrdererOrg
   Name: OrdererOrg
   ID: OrdererMSP
-  MSPDir: ../crypto-config/ordererOrganizations/orderer-org/msp
+  MSPDir: ../CryptoMaterials/crypto-config/ordererOrganizations/orderer-org/msp
 - &Org1
   Name: Org1MSP
   ID: Org1MSP
-  MSPDir: ../crypto-config/peerOrganizations/org1/msp
+  MSPDir: ../CryptoMaterials/crypto-config/peerOrganizations/org1/msp
   AnchorPeers:
   - Host: org1-peer-0
     Port: 7051
 - &Org2
   Name: Org2MSP
   ID: Org2MSP
-  MSPDir: ../crypto-config/peerOrganizations/org2/msp
+  MSPDir: ../CryptoMaterials/crypto-config/peerOrganizations/org2/msp
   AnchorPeers:
   - Host: org2-peer-0
     Port: 7051
@@ -74,8 +74,8 @@ Profiles:
         Organizations:
         - *Org1
         - *Org2
-
-  ShopInsuranceChannel:
+        
+  GlobalChannel:
     Consortium: InsuranceConsortium
     Application:
       # <<: *ApplicationDefaults
